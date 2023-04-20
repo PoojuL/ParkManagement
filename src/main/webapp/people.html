@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add People Information</title>
+    
+    <style>
+
+        #body
+        {
+
+             background-color:  rgb(255, 183, 27);
+              background-image: url('addpeople.jpg');
+            
+        }
+        #divB
+        {
+            text-align: center;
+            
+            margin-left: 450px;
+            margin-right: 700px;
+            margin-top: 150px;
+            border: 1px solid white;
+            width: 35%;
+           
+            background-color: grey;
+           
+
+           
+        }
+		
+		.allbuttons
+        {
+        color: white;
+            width: 170px;
+            height: 30px;
+           background-color: blue;
+            border: none;
+        
+        }
+        
+        
+       
+       	.allbuttons:hover {
+		
+		cursor:pointer;
+		color:orange;
+	
+			}
+        
+        
+       
+
+       
+      
+    </style>
+</head>
+<body id=body>
+
+<div id=divB>
+
+
+
+
+
+    <h3>Add People Information</h3>
+<form action="AddPeopleController" method="post">
+   
+        <label >Your Name</label>
+        <input type="text" name="fullName" placeholder="Your Name"> <br> <br>
+        <label >Your email</label>
+        <input type="email" name="email"  placeholder="Your email"> <br> <br>
+        <label >Your Date of Birth</label>
+        <input type="date" name="dob" > <br> <br>
+        <label >Your phone</label>
+        <input type="text" name="phone"  placeholder="Your phone"><br> <br>
+        <label >Things To Do</label>
+        <select name ="things_to_do">
+          
+            <option value="Parking">Parking </option>
+            <option value="Food_tasting">Food_tasting</option>
+            <option value="Exercise">Exercise </option>
+            <option value="Playground">Playground </option>
+             
+
+
+        </select><br> <br>
+        
+        
+         <label >Your idType</label>
+        <select name ="idType">
+          
+            <option value="Aadhar Card">Aadhar Card </option>
+            <option value="PAN Card">PAN Card </option>
+            <option value="Driving License">Driving License </option>
+             <option value="College ID" >College ID </option>
+             
+
+
+        </select><br> <br>
+        
+       
+        <label >Your idNumber</label>
+        <input type="text" name="idNumber"  placeholder="Your id Number"><br> <br>
+       
+
+    
+        <input type="submit" name="Add People" class="allbuttons">
+        <input type="reset" name="Reset" class="allbuttons">
+        
+            </form>
+
+   </div>
+    
+</body>
+</html>
